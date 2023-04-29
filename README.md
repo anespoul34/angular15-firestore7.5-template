@@ -1,11 +1,10 @@
 # AngFire
 
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
+
 ## Installation
 
-Run `npm install`.
-You need to setup your firebase configuration in an environment.ts file.
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
+Run `npm install`. You also need to setup your firebase configuration in an environment.ts file.
 
 ## Development server
 
