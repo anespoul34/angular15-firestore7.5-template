@@ -1,19 +1,17 @@
 <form #f="ngForm" (ngSubmit)="addData(f)">
-  <input type="text" name="name" ngModel>
-  <br>
-  <input type="email" name="email" ngModel>
-  <br>
-  <input type="password" name="password" ngModel>
-  <br>
-  <button type="submit"> Save Data</button>
+  <input type="text" name="name" placeholder="Name" ngModel>
+  <input type="email" name="email" placeholder="Email" ngModel>
+  <input type="password" name="password" placeholder="Password" ngModel>
+  <button type="submit">Post</button>
 </form>
 <br />
 <br />
 <br />
 <ul>
+  <li style="font-weight: bold;">GET</li>
   <li *ngFor="let data of userData |async">
     {{data.name}} / {{data.email}}
-    <button (click)="updateData(data.id)">Edit</button>
+    <button (click)="updateData(data.id)">Update</button>
     <button (click)="deleteData(data.id)">Delete</button>
   </li>
 </ul>
